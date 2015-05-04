@@ -13,6 +13,7 @@
 		3F5643091AF7702A00993B00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5643081AF7702A00993B00 /* Images.xcassets */; };
 		3F56430C1AF7702A00993B00 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F56430A1AF7702A00993B00 /* LaunchScreen.xib */; };
 		3F5643181AF7702A00993B00 /* TestingWithQuickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5643171AF7702A00993B00 /* TestingWithQuickTests.swift */; };
+		3F5643251AF821AD00993B00 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5643211AF8205B00993B00 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3F5643111AF7702A00993B00 /* TestingWithQuickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingWithQuickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5643161AF7702A00993B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F5643171AF7702A00993B00 /* TestingWithQuickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingWithQuickTests.swift; sourceTree = "<group>"; };
+		3F5643211AF8205B00993B00 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5643251AF821AD00993B00 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		3F5642F31AF7702A00993B00 = {
 			isa = PBXGroup;
 			children = (
+				3F5643211AF8205B00993B00 /* Quick.framework */,
 				3F5642FE1AF7702A00993B00 /* TestingWithQuick */,
 				3F5643141AF7702A00993B00 /* TestingWithQuickTests */,
 				3F5642FD1AF7702A00993B00 /* Products */,
@@ -410,6 +414,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestingWithQuick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +428,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = TestingWithQuick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -434,6 +446,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -453,6 +466,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TestingWithQuickTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
