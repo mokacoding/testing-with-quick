@@ -13,6 +13,7 @@
 		3F5643091AF7702A00993B00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5643081AF7702A00993B00 /* Images.xcassets */; };
 		3F56430C1AF7702A00993B00 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F56430A1AF7702A00993B00 /* LaunchScreen.xib */; };
 		3F5643181AF7702A00993B00 /* TestingWithQuickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5643171AF7702A00993B00 /* TestingWithQuickTests.swift */; };
+		3F5643241AF820A400993B00 /* SampleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5643231AF820A400993B00 /* SampleSpec.swift */; };
 		3F5643251AF821AD00993B00 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5643211AF8205B00993B00 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		3F5643161AF7702A00993B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F5643171AF7702A00993B00 /* TestingWithQuickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingWithQuickTests.swift; sourceTree = "<group>"; };
 		3F5643211AF8205B00993B00 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		3F5643231AF820A400993B00 /* SampleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				3F5643171AF7702A00993B00 /* TestingWithQuickTests.swift */,
 				3F5643151AF7702A00993B00 /* Supporting Files */,
+				3F5643231AF820A400993B00 /* SampleSpec.swift */,
 			);
 			path = TestingWithQuickTests;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5643241AF820A400993B00 /* SampleSpec.swift in Sources */,
 				3F5643181AF7702A00993B00 /* TestingWithQuickTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
